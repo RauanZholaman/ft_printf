@@ -48,7 +48,6 @@ bonus: $(NAME) .build_bonus
 .build_bonus: $(BONUS_OBJS)
 	ar rcs $(NAME) $(BONUS_OBJS)
 	ranlib $(NAME)
-	touch .build_bonus
 
 %.o: %.c $(HEADER)
 	$(CC) $(CFLAGS) -c $< -o $@
